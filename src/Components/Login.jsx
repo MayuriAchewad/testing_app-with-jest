@@ -17,7 +17,7 @@ const validationSchema = Yup.object({
 
 });
 
-export const Login = () => {
+const Login = () => {
   const [msg, setMsg] = useState("");
 
   const initialValues = {
@@ -55,6 +55,7 @@ export const Login = () => {
         </Grid>
         <Grid item xs={12}>
           <TextField
+            data-testid="validate"
             name="password"
             value={formik.values.password}
             onChange={formik.handleChange}
@@ -81,3 +82,4 @@ export const Login = () => {
     </form>
   );
 };
+export default Login;
