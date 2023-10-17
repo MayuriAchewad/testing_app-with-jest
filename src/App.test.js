@@ -3,6 +3,6 @@ import App from './App';
 
 test('header renders with react react testing app in the document', () => {
   render(<App />);
-  const linkElement = screen.getByText(/This is React testing app/i);
+  const linkElement = screen.getByTestId(/loginForm/i);
   expect(linkElement).toBeInTheDocument();
 });

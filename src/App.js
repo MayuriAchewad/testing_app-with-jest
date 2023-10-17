@@ -1,13 +1,12 @@
 import React from 'react';
 import Login  from './Components/Login';
+import { Counter } from './Components/Counter';
 
 function App() {
   return (
-    <div className="App">
-     <h1>
-      This is react testing app
-     </h1>
+    <div className="App" data-testid="loginForm">
      <Login/>
+     <Counter/>
     </div>
   );
 }
